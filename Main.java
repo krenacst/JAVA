@@ -32,6 +32,7 @@ public class Main {
         } else {
             System.out.println("Az y a nagyobb.");
         }
+        System.out.println("------------111111111-------------------------------------------------------------");
     }
 
     public static void Two() {
@@ -45,17 +46,18 @@ public class Main {
         else {
             System.out.println("Az x nem osztható y-nal.");
         }
+        System.out.println("---------------------22222222222----------------------------------------------------");
     }
 
     public static void Three() {
-        int x = (int) (Math.random() * 200 - 100);
+        int x = (int) (Math.random() * 201 - 100);
         System.out.println(x);
         if (x % 2 == 0) {
             System.out.println("Az x páros szám.");
         } else {
             System.out.println("Az x nem páros szám.");
         }
-
+        System.out.println("--------------------------------333333333333-----------------------------------------");
     }
 
     public static void Four() {
@@ -94,6 +96,7 @@ public class Main {
         if (z == x && y < x) {
             System.out.println(x + " , " + z + " = " + y);
         }
+        System.out.println("----------------44444444444444---------------------------------------------------------");
     }
 
     public static void Five() {
@@ -122,11 +125,12 @@ public class Main {
 
 
         }
+        System.out.println("---------------------55555----------------------------------------------------");
     }
 
     public static void Six() {
         int a = (int) (Math.random() * 200);
-
+        System.out.println("------------6666666666-------------------------------------------------------------");
     }
 
     public static void Seven() {
@@ -134,6 +138,7 @@ public class Main {
         for (int i = 0; i < 101; i++) {
             System.out.println(i);
         }
+        System.out.println("----------------------77777777777---------------------------------------------------");
     }
 
     public static void Eight() {
@@ -142,6 +147,7 @@ public class Main {
                 System.out.println(i);
             }
         }
+        System.out.println("---------------------8888888888----------------------------------------------------");
     }
 
     public static void Nine() {
@@ -151,6 +157,7 @@ public class Main {
             }
 
         }
+        System.out.println("---------------------999999999----------------------------------------------------");
     }
 
     public static void Ten() {
