@@ -1,0 +1,210 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        One();
+        Two();
+        Three();
+        System.out.println("Hello World!");
+        Four();
+        Five();
+        Seven();
+        Eight();
+        Nine();
+        Ten();
+        Eleven();
+        Twelve();
+        Thirteen();
+        Fourteen();
+        Fiveteen();
+        Sixteen();
+
+    }
+
+    public static void One() {
+        int x = (int) (Math.random() * 10 + 1);
+        int y = (int) (Math.random() * 10 + 1);
+        System.out.println("x = " + x + "y = " + y);
+        if (x > y) {
+            System.out.println("Az x nagyobb.");
+        } else if (x == y) {
+            System.out.println("Egyenlők.");
+        } else {
+            System.out.println("Az y a nagyobb.");
+        }
+    }
+
+    public static void Two() {
+        int x = (int) (Math.random() * 100 + 1);
+        int y = (int) (Math.random() * 100 + 1);
+        System.out.println("x = " + x + "y = " + y);
+        if (x % y == 0) {
+            System.out.println("Az x osztható y-nal");
+        } //else if (x == y) {
+        //System.out.println("Egyenlők.");
+        else {
+            System.out.println("Az x nem osztható y-nal.");
+        }
+    }
+
+    public static void Three() {
+        int x = (int) (Math.random() * 200 - 100);
+        System.out.println(x);
+        if (x % 2 == 0) {
+            System.out.println("Az x páros szám.");
+        } else {
+            System.out.println("Az x nem páros szám.");
+        }
+
+    }
+
+    public static void Four() {
+        int x = (int) (Math.random() * 100 - 50);
+        int y = (int) (Math.random() * 100 - 50);
+        int z = (int) (Math.random() * 100 - 50);
+
+        if (x > y && x > z && y > z) {
+            System.out.println(x + " , " + y + " , " + z);
+        } else if (x > y && z > y && x > z) {
+            System.out.println(x + " , " + z + " , " + y);
+        } else if (y > x && y > z && x > z) {
+            System.out.println(y + " , " + x + " , " + z);
+        } else if (y > x && y > z && z > x) {
+            System.out.println(y + " , " + z + " , " + x);
+        } else if (z > x && z > y && x > y) {
+            System.out.println(z + " , " + x + " , " + y);
+        } else if (z > x && z > y && y > x) {
+            System.out.println(z + " , " + y + " , " + z);
+        }
+        if (x == y && z < y) {
+            System.out.println(x + " , " + y + " = " + z);
+        }
+        if (x == y && z > y) {
+            System.out.println(z + " , " + y + " = " + x);
+        }
+        if (y == z && x < z) {
+            System.out.println(y + " = " + z + " = " + x);
+        }
+        if (y == z && x > z) {
+            System.out.println(x + " , " + y + " = " + z);
+        }
+        if (z == x && y > x) {
+            System.out.println(z + " , " + y + " = " + x);
+        }
+        if (z == x && y < x) {
+            System.out.println(x + " , " + z + " = " + y);
+        }
+    }
+
+    public static void Five() {
+        int a = (int) (Math.random() * 420 - 110);
+        int b = (int) (Math.random() * 420 - 110);
+        int c = (int) (Math.random() * 420 - 110);
+        int d = (int) (Math.random() * 420 - 110);
+        int e = (int) (Math.random() * 420 - 110);
+        System.out.println(a);
+        if (a > b && b > c && c > d && d > e) {
+            System.out.println("A legkisebb szám: " + e);
+        }
+        if (a > b && b > c && c > e && e > d) {
+            System.out.println("A legkisebb szám: " + d);
+        }
+        if (a > b && b > d && b > e && e > c) {
+            System.out.println("A legkisebb szám: " + c);
+        }
+        if (a > c && c > d && d > e && e > b) {
+            System.out.println("A legkisebb szám: " + b);
+        }
+        if (b > c && c > d && d > e && e > a) {
+            System.out.println("A legkisebb szám: " + a);
+        } else {
+            System.out.println("Rendes számokat találj már ki b+");
+
+
+        }
+    }
+
+    public static void Six() {
+        int a = (int) (Math.random() * 200);
+
+    }
+
+    public static void Seven() {
+
+        for (int i = 0; i < 101; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public static void Eight() {
+        for (int i = 0; i < 101; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public static void Nine() {
+        for (int i = 0; i < 101; i++) {
+            if (i % 2 == 1) {
+                System.out.println(i);
+            }
+
+        }
+    }
+
+    public static void Ten() {
+        for (int i = 0; i < 101; i++) {
+            if (i % 3 == 0) {
+                System.out.println(i);
+            }
+
+        }
+        System.out.println("----------------------10--------------10-----------------10------------10--------");
+    }
+
+    public static void Eleven() {
+        int i = 100;
+        while (i > 0) {
+            System.out.println(i);
+            i--;
+        }
+        System.out.println("----------------------11--------------11-----------------11------------11--------");
+    }
+
+    public static void Twelve() {
+        int v = (int)(Math.random() * 10) + 1;
+        System.out.println(v);
+
+        for (int j = 0; j < v; j++) {
+
+                System.out.println(j += 5);
+            System.out.println("----------------------12--------------12-----------------12------------12--------");
+        }
+    }
+
+    public static void Thirteen() {
+    int x = (int)(Math.random() * 3 + 1);
+    int y = (int)(Math.random() * 6) + 5;
+    for (int k = x; k < y; k++) {
+        System.out.println(k);
+    }
+        System.out.println("----------------------13--------------13-----------------13------------13--------");
+    }
+
+
+    public static void Fourteen() {
+        int x = (int)Math.floor(Math.random() * 3) + 1;
+        int y = (int)Math.floor(Math.random() * 6) + 5;
+        for (int k = x + 1; k < y; k++) {
+            System.out.println(k);
+        }
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println("----------------14--------------14----------------14------------14--------");
+    }
+    public static void Fiveteen() {
+
+    }
+    public static void Sixteen() {}
+}
