@@ -8,6 +8,7 @@ public class Main {
         System.out.println("Hello World!");
         Four();
         Five();
+        Six();
         Seven();
         Eight();
         Nine();
@@ -105,21 +106,21 @@ public class Main {
         int c = (int) (Math.random() * 420 - 110);
         int d = (int) (Math.random() * 420 - 110);
         int e = (int) (Math.random() * 420 - 110);
-        System.out.println(a);
-        if (a > b && b > c && c > d && d > e) {
-            System.out.println("A legkisebb szám: " + e);
+
+        if (e > a && b > a && c > a && d > a) {
+            System.out.println("A legkisebb szám: " + a);
         }
-        if (a > b && b > c && c > e && e > d) {
+        if (a > b && c > b && d > b && e > b) {
             System.out.println("A legkisebb szám: " + d);
         }
-        if (a > b && b > d && b > e && e > c) {
+        if (a > c && d > c && b > c && e > c) {
             System.out.println("A legkisebb szám: " + c);
         }
-        if (a > c && c > d && d > e && e > b) {
-            System.out.println("A legkisebb szám: " + b);
+        if (a > d && c > d && e > d && b > d) {
+            System.out.println("A legkisebb szám: " + d);
         }
-        if (b > c && c > d && d > e && e > a) {
-            System.out.println("A legkisebb szám: " + a);
+        if (a > e && b > e && c > e && d > e) {
+            System.out.println("A legkisebb szám: " + e);
         } else {
             System.out.println("Rendes számokat találj már ki b+");
 
@@ -129,7 +130,30 @@ public class Main {
     }
 
     public static void Six() {
+
         int a = (int) (Math.random() * 200);
+        int b = a / 10;
+        int c = a % 10;
+        System.out.println(a);
+        if (a < 100) {
+
+            System.out.println(b);
+            System.out.println(c);
+            System.out.println(b + c);
+
+            if (b % 2 == 0 && c % 2 != 0) {
+                System.out.println('1');
+            }
+            if (b % 2 != 0 && c % 2 != 0) {
+                System.out.println('0');
+            }
+            if (b % 2 != 0 && c % 2 == 0) {
+                System.out.println('1');
+            }
+            if (b % 2 == 0 && c % 2 == 0) {
+                System.out.println('2');
+            }
+        }
         System.out.println("------------6666666666-------------------------------------------------------------");
     }
 
@@ -180,29 +204,29 @@ public class Main {
     }
 
     public static void Twelve() {
-        int v = (int)(Math.random() * 10) + 1;
+        int v = (int) (Math.random() * 10) + 1;
         System.out.println(v);
 
         for (int j = 0; j < v; j++) {
 
-                System.out.println(j += 5);
+            System.out.println(j += 5);
             System.out.println("----------------------12--------------12-----------------12------------12--------");
         }
     }
 
     public static void Thirteen() {
-    int x = (int)(Math.random() * 3 + 1);
-    int y = (int)(Math.random() * 6) + 5;
-    for (int k = x; k < y; k++) {
-        System.out.println(k);
-    }
+        int x = (int) (Math.random() * 3 + 1);
+        int y = (int) (Math.random() * 6) + 5;
+        for (int k = x; k < y; k++) {
+            System.out.println(k);
+        }
         System.out.println("----------------------13--------------13-----------------13------------13--------");
     }
 
 
     public static void Fourteen() {
-        int x = (int)Math.floor(Math.random() * 3) + 1;
-        int y = (int)Math.floor(Math.random() * 6) + 5;
+        int x = (int) Math.floor(Math.random() * 3) + 1;
+        int y = (int) Math.floor(Math.random() * 6) + 5;
         for (int k = x + 1; k < y; k++) {
             System.out.println(k);
         }
@@ -210,8 +234,41 @@ public class Main {
         System.out.println(y);
         System.out.println("----------------14--------------14----------------14------------14--------");
     }
-    public static void Fiveteen() {
 
+    public static void Fiveteen() {
+        int x = (int) Math.floor(Math.random() * 6) + 5;
+        int y = (int) Math.floor(Math.random() * 4) + 1;
+        int z = (int) Math.floor(Math.random() * 4) + 10;
+        System.out.println("Az első változó értéke: " + x);
+
+
+        int e = z - y + 1;
+
+        for (int i = 0; i < x; i++) {
+            int g = (int) Math.floor(Math.random() * e) + y;
+            System.out.println(g);
+        }
+        System.out.println("----------------15--------------15----------------15------------15--------");
     }
-    public static void Sixteen() {}
-}
+
+    public static void Sixteen() {
+        int a = (int) Math.floor(Math.random() * 11 + 10) * 100;
+        System.out.println(a);
+            int crw = 100;
+            int prc = a / 2;
+            for (int i = 0; i < 100; i++) {
+                int ppl = (int) Math.floor(Math.random() * 99) + 1;
+                if (ppl < 5) {
+                    System.out.println("A személy kora: " + ppl + " év, ezért a jegy ingyenes.");
+                } else {
+                    if (ppl < 18 || ppl > 65) {
+                        System.out.println("A személy kora: " + ppl + " év, ezért a jegy ára: " + prc);
+                    } else if (ppl >= 18 && ppl <= 65) {
+                        System.out.println("A személy kora: " + ppl + " év, ezért a jegy ára: " + a);
+                    }
+                }
+            }
+        }
+    }
+
+
