@@ -254,7 +254,8 @@ public class Main {
     public static void Sixteen() {
         int a = (int) Math.floor(Math.random() * 11 + 10) * 100;
         System.out.println(a);
-            int crw = 100;
+            int crw = (int)Math.floor(Math.random() * 51) + 50;
+        System.out.println("A filmre ennyien: " + crw + " látogattak el");
             int prc = a / 2;
             for (int i = 0; i < 100; i++) {
                 int ppl = (int) Math.floor(Math.random() * 99) + 1;
@@ -262,9 +263,9 @@ public class Main {
                     System.out.println("A személy kora: " + ppl + " év, ezért a jegy ingyenes.");
                 } else {
                     if (ppl < 18 || ppl > 65) {
-                        System.out.println("A személy kora: " + ppl + " év, ezért a jegy ára: " + prc);
+                        System.out.println("A személy kora: " + ppl + " év, ezért a jegy ára: " + prc + " Ft");
                     } else if (ppl >= 18 && ppl <= 65) {
-                        System.out.println("A személy kora: " + ppl + " év, ezért a jegy ára: " + a);
+                        System.out.println("A személy kora: " + ppl + " év, ezért a jegy ára: " + a + " Ft");
                     }
                 }
             }
